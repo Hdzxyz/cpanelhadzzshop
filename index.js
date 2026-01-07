@@ -19,15 +19,15 @@ app.use(express.json());
 app.use(express.static('public'));
 
 // Configuration
-const apikey = 'isidewek';
-const capikey = 'isidewek';
-const domain = 'isidewek';
+const apikey = 'ptla_YBfuZT56p8sa3UE5bbS2h640Af5SHryimOG4rmjfp7Y';
+const capikey = 'ptlc_Ho6GdZoV1I0KEU3YwJdew3g9tLIyTnVc2pRzfRIueOe';
+const domain = 'https://hadzzshoppanel28.putragana28.web.id/';
 const nestid = '5';
 const egg = '15';
 const loc = '1';
-const gmailadmin = 'admin@gmail.com'; // Admin email that won't be deleted
-const telegramBotToken = 'isidewek';
-const adminTelegramId = 'isidewek';
+const gmailadmin = 'pemilik@alwayshadzxyz.my..id'; // Admin email that won't be deleted
+const telegramBotToken = '8467290624:AAFCJeCsbd-epwsyxQNIfXyqU74Oys24BNk';
+const adminTelegramId = '8401107488';
 
 // In-memory storage
 let servers = [];
@@ -57,8 +57,8 @@ async function sendTelegramMessage(chatId, message) {
 app.post('/api/login', (req, res) => {
   const { username, password } = req.body;
 
-  if (username === 'isidewek' && password === 'isidewek') {
-    res.json({ success: true, user: { username: 'isidewek', role: 'admin' } });
+  if (username === 'hadzz' && password === 'hadzzsrv1') {
+    res.json({ success: true, user: { username: 'hadzz', role: 'admin' } });
   } else {
     res.status(401).json({ error: 'Invalid credentials' });
   }
